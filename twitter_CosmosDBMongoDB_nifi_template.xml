@@ -242,7 +242,7 @@ write JSON to CosmosDB using Azure MongoDB API</description>
             <properties>
                 <entry>
                     <key>mongo-uri</key>
-                    <value>mongodb://<username>:<primary password>@<hostname>:10255/?ssl=true&amp;replicaSet=globaldb&amp;retrywrites=false&amp;maxIdleTimeMS=120000&amp;appName=@<username>@</value>
+                    <value>mongodb://username:primary password@hostname:10255/?ssl=true&amp;replicaSet=globaldb&amp;retrywrites=false&amp;maxIdleTimeMS=120000&amp;appName=@username@</value>
                 </entry>
                 <entry>
                     <key>ssl-context-service</key>
