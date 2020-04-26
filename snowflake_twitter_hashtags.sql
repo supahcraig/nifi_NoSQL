@@ -17,13 +17,7 @@ file_format = (type=json);
 
 describe pipe nifi_twitter_pipe;
 
-alter user cnelson set rsa_public_key  = 'MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyFn1jbULNi93misGhqhv
-h9QVXV498fTi9sIegi19pbVt+EjLnmI85pw1rMvOURj+nyWWUDriNGudJzzjIeVU
-LqLrFCl4Yn5vujE0QHVoKWlrEtITj4eo8Mtt+ewW9qzR8LRCnB6UoZ4cNISK5D2O
-AIplZu5WyvqJ/6PiOscS9vmPCULb5WHuCIzzWTCZgSBMmMCDYhRDPKdHX+qw5Hxt
-bmKaFpQlmVmM6GiBf1vsJBZUKArJad5S4PrKWw8PDmsU+Tq5i1TjqFwm1k47tu+W
-Ee3Vpco95r8FSj5KANvVonWVj1EqgM3vf0EZfN2o0NIQORhVhGG08IGhbYZf4AW6
-2wIDAQAB';
+alter user cnelson set rsa_public_key  = 'YOUR_PUBLIC_KEY_HERE';
 
 create or replace warehouse compute_wh
 warehouse_size = small
