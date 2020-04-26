@@ -39,7 +39,7 @@ HAVING count (*) > 1
 ORDER BY htag_count desc;
 ```
 
-####Snowflake
+#### Snowflake
 ```javascript
 SELECT count(*)
      , htags.value:text
