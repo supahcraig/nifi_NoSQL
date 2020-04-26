@@ -38,3 +38,14 @@ GROUP BY x.hashtag_text
 HAVING count (*) > 1
 ORDER BY htag_count desc;
 ```
+
+####Snowflake
+```javascript
+select count(*)
+     , htags.value:text
+from twitter t
+   , lateral flatten(input => t.tweet_payload:entities:hashtags) htags
+where 1 = 1
+group by 2
+order by 1 desc;
+```
