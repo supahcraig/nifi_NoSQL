@@ -41,11 +41,11 @@ ORDER BY htag_count desc;
 
 ####Snowflake
 ```javascript
-select count(*)
+SELECT count(*)
      , htags.value:text
-from twitter t
-   , lateral flatten(input => t.tweet_payload:entities:hashtags) htags
-where 1 = 1
-group by 2
-order by 1 desc;
+FROM twitter t
+   , LATERAL FLATTEN(INPUT => t.tweet_payload:entities:hashtags) htags
+WHERE 1 = 1
+GROUP BY 2
+ORDER BY 1 desc;
 ```
